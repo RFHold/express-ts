@@ -62,7 +62,7 @@
         "label-position": true,
         "max-line-length": [
             true,
-            80
+            150
         ],
         "new-parens": true,
         "no-angle-bracket-type-assertion": true,
