@@ -6,13 +6,13 @@ import dotenv from "dotenv";
 /** Optional Session storage options */
 
 // import MongoStore from "connect-mongo";
-// new MongoStore({ url: process.env.DBConnectionString, }); used in the store property of express.session
+// new MongoStore({ url: process.env.DBConnectionString, }) used in the store property of express.session
 
 // import SQLiteStore from "connect-sqlite3";
-// new SQLiteStore(); used in the store property of express.session
+// new SQLiteStore() used in the store property of express.session
 
 // import MySQLStore from "connect-mysql";
-// new MySQLStore({ config: process.env.DBConnectionString, }); used in the store property of express.session
+// new MySQLStore({ config: process.env.DBConnectionString, }) used in the store property of express.session
 
 const PORT = process.env.PORT || 3000;
 
@@ -27,7 +27,7 @@ app.use(
 		cookie: {
 			httpOnly: false,
 			secure: false,
-			maxAge: 1000 * 60 * 60 * 24 * 3
+			maxAge: 1000 * 60 * 60 * 24 * 3,
 		},
 	}),
 );
